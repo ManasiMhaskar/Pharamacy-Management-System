@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo</title>
+    <style>
+        .first{
+            text-align: center;
+            font-size: 30px;
+            text-decoration: none;
+            background-color: crimson;
+        }
+        .second{
+            text-decoration: line-through;
+            background-color: darksalmon;
+        }
+    </style>
+    <script>
+        function addClass(){
+            d1.classList.add('first')
+            d1.classList.remove('second')
+        }
+    </script>
+</head>
+<body>
+    <div id="d1" onclick="addClass()" class="second">
+        Hello Everyone
+    </div>
+</body>
+</html>

@@ -1,0 +1,131 @@
+<html lang="en">
+
+<head>
+    <title>Login Page</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Andika&display=swap">
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="login.js"></script>
+</head>
+
+<body>
+
+    <header class="header">
+        <a href="#" class="logo">
+            <img src="images/logo.png" alt="logo">
+        </a>
+        <nav class="headbar">
+            <a href="index.html">HOME</a>
+            <a href="login.html">LOGIN</a>
+            <!-- <a href="doctor.html">DOCTORS</a> -->
+            <a href="medicine.html">MEDICINE</a>
+            <a href="service.html">SERVICE</a>
+            <a href="contact.html">CONTACT</a>
+        </nav>
+        <div class="menubtn">
+            <button>Helpline</button>
+        </div>
+    </header>
+
+    <div class="container" id="container">
+
+        <!-- Sign up -->
+        <div class="form sign-up-container">
+            <form action="#" name="login">
+                <h1>Create An Account</h1>
+                <div class="social-container">
+                    <a href="https://r.search.yahoo.com/_ylt=Awr1TbHOWzNlmfYgvA.7HAx.;_ylu=Y29sbwNzZzMEcG9zAzEEdnRpZAMEc2VjA3Ny/RV=2/RE=1697893454/RO=10/RU=http%3a%2f%2fwww.facebook.com%2fr.php/RK=2/RS=LoFNOKc5N.kc9hiIeIgD_ux0Wo8-" class="social"><i class="fa-brands fa-square-facebook"></i></a>
+                    <a href="https://r.search.yahoo.com/_ylt=AwrKDo6yXDNlwBEgntq7HAx.;_ylu=Y29sbwNzZzMEcG9zAzEEdnRpZAMEc2VjA3Ny/RV=2/RE=1697893683/RO=10/RU=https%3a%2f%2fdocs.google.com%2fforms%2f/RK=2/RS=mfkOvU74xnkzrao59TcHRpikIOA-" class="social"><i class="fa-brands fa-google"></i></a>
+                    <a href="https://r.search.yahoo.com/_ylt=Awrx.OzxXDNlu7kg0VC7HAx.;_ylu=Y29sbwNzZzMEcG9zAzEEdnRpZAMEc2VjA3Ny/RV=2/RE=1697893746/RO=10/RU=https%3a%2f%2fwww.linkedin.com%2fsignup/RK=2/RS=V5uD2neBC4sy0f7KLCPSLoRputY-" class="social"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <span>or use your email for registration</span>
+
+                <div class="input-field">
+                    <i class="fa fa-user"></i>
+                    <input type="text" placeholder="Username" name="s_user" id="s_user">
+                </div>
+
+                <div class="input-field">
+                    <i class="fa fa-envelope"></i>
+                    <input type="email" placeholder="Email" name="s_email" id="s_user">
+                </div>
+
+                <div class="input-field">
+                    <i class="fa fa-lock"></i>
+                    <input type="password" placeholder="Password" name="s_pass" id="s_pass">
+                </div>
+                <button name="signUp2" onclick="validate1()">Sign Up</button>
+            </form>
+        </div>
+        <!-- Sign up -->
+
+        <!-- Sign in -->
+        <div class="form sign-in-container">
+            <form action="#" name="signin">
+                
+                <h1>Login</h1>
+                <br>
+                <div class="social-container">
+                    <a href="https://r.search.yahoo.com/_ylt=Awr1TbHOWzNlmfYgvA.7HAx.;_ylu=Y29sbwNzZzMEcG9zAzEEdnRpZAMEc2VjA3Ny/RV=2/RE=1697893454/RO=10/RU=http%3a%2f%2fwww.facebook.com%2fr.php/RK=2/RS=LoFNOKc5N.kc9hiIeIgD_ux0Wo8-" class="social"><i class="fa-brands fa-square-facebook"></i></a>
+                    <a href="https://r.search.yahoo.com/_ylt=AwrKDo6yXDNlwBEgntq7HAx.;_ylu=Y29sbwNzZzMEcG9zAzEEdnRpZAMEc2VjA3Ny/RV=2/RE=1697893683/RO=10/RU=https%3a%2f%2fdocs.google.com%2fforms%2f/RK=2/RS=mfkOvU74xnkzrao59TcHRpikIOA-" class="social"><i class="fa-brands fa-google"></i></a>
+                    <a href="https://r.search.yahoo.com/_ylt=Awrx.OzxXDNlu7kg0VC7HAx.;_ylu=Y29sbwNzZzMEcG9zAzEEdnRpZAMEc2VjA3Ny/RV=2/RE=1697893746/RO=10/RU=https%3a%2f%2fwww.linkedin.com%2fsignup/RK=2/RS=V5uD2neBC4sy0f7KLCPSLoRputY-" class="social"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <span>or use your account</span>
+
+                <div class="input-field">
+                    <i class="fa fa-user"></i>
+                    <input type="text" placeholder="Username">
+                </div>
+
+                <div class="input-field">
+                    <i class="fa fa-lock"></i>
+                    <input type="password" placeholder="Password">
+                </div>
+                <a href="#">Forgot your password</a>
+                
+                <button name="signIn2" onclick="validate2()">Sign In</button>
+            </form>
+        </div>
+         <!-- Sign in -->
+
+         <!-- overlay -->
+         
+         <div class="overlay-container">
+            <div class="overlay">
+                <div class="overlay-panel overlay-left">
+                    <h1>Welcome Back!</h1>
+                    <p>To keep connected with us please login with your personal info</p>
+                    <img src="images/s1.png" alt="login-page" style="height: 25rem; width: 30rem; padding-top: 5%;">
+                    <button class="btn" id="signIn1">Sign in</button>
+                </div>
+
+                <div class="overlay-panel overlay-right">
+                    <h1>Hello User</h1>
+                    <p>Enter your personal details and start your journeywith us </p>
+                    <img src="images/s3.png" alt="login-page" style="height: 25rem; width: 30rem;">
+                    <button class="btn" id="signUp1">Sign Up</button>
+                </div>
+            </div>
+         </div>
+         
+         <!-- overlay -->
+    </div>
+
+    <script>
+        const signUpButton = document.getElementById('signUp1');
+        const signInButton = document.getElementById('signIn1');
+        const container = document.getElementById('container');
+
+        signUpButton.addEventListener('click',() =>{
+            container.classList.add("right-panel-active");
+        })
+
+        signInButton.addEventListener('click',() =>{
+            container.classList.remove("right-panel-active");
+        })
+
+
+    </script>
+</body>
+
+</html>

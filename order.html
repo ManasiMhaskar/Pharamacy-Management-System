@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ORDER</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Andika&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="order.css">
+    <script src="order.js"></script>
+    <script src="order1.js"></script>
+    <script>
+        function hideReceipt(){
+            document.getElementById("Receipt1").style.opacity = 0
+        }
+        function showOrder() {
+            alert('Your order is confirmed')
+            document.getElementById("Order1").style.opacity = 1
+            document.getElementById("Receipt1").style.opacity = 0
+            document.getElementById("Order1").style.marginTop = "-1%"
+            document.getElementById("Receipt1").style.marginTop = "50%"
+        }
+
+        function showReceipt() {
+            document.getElementById("Order1").style.opacity = 0
+            document.getElementById("Receipt1").style.opacity = 1
+            document.getElementById("Order1").style.marginTop = "-100%"
+            document.getElementById("Receipt1").style.marginTop = "5%"
+            showOrder2()
+        }
+        function showOrder2(){
+
+        }
+    </script>
+</head>
+
+<body onload="hideReceipt()">
+
+    <section class="order" id="order">
+        <h1 class="heading">
+            ORDER NOW!
+            <div class="back">
+                <a href="medicine.html"><i class="fa-solid fa-xmark"></i></a>
+            </div>
+        </h1>
+        <h3 class="sub-heading">Medicine at Your Doorstep</h3>
+        <!----------------- ORDER FORM -------------->
+        <div id="Order1">
+            <form action="" name="order">
+
+                <div class="inputBox">
+                    <div class="input">
+                        <input type="text" id="name" placeholder="Enter Your Name" onblur="validatename()"
+                            onblur="disableorderbtn()" autocomplete="off">
+                        <br><span class="inputborder" id="namee"> </span>
+                    </div>
+
+                    <div class="input">
+                        <input type="text" id="mobile" placeholder="Enter Mobile Your Number" onblur="validatemobile()"
+                            autocomplete="off">
+                        <br><span class="inputborder" id="mobilee"> </span>
+                    </div>
+                </div>
+
+                <div class="inputBox">
+                    <div class="input">
+                        <select id="medtype" name="medtype" onclick="changeMedName(this.value)">
+                            <option value="smt">Select Medicine Type</option>
+                            <option value="Antibiotics">Antibiotics</option>
+                            <option value="Ayurvedic">Ayurvedic</option>
+                            <option value="Antifungal">Antifungal</option>
+                            <option value="Herbal">Herbal</option>
+                            <option value="Vitamins">Vitamins</option>
+                        </select>
+
+                        <br><span class="inputborder" id="foodnamee"> </span>
+                    </div>
+                    <div class="input">
+                        <select id="medname" name="medname">
+                            <option value="1"></option>
+                            <option value="2"></option>
+                            <option value="3"></option>
+                            <option value="4"></option>
+                            <option value="5"></option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="inputBox">
+                    <div class="input">
+                        <input type="number" placeholder="Enter Quantity" id="quantity" autocomplete="off">
+                    </div>
+                    <div class="input">
+                        <input type="date" id="dte">
+                    </div>
+                </div>
+
+                <div class="inputBox">
+                    <div class="input">
+                        <textarea name="" placeholder="Enter Your Address" id="address" cols="30" rows="10"
+                            onblur="validateaddress()" autocomplete="off"></textarea>
+                        <br><span class="inputborder" id="addresss"> </span>
+                    </div>
+                    <div class="input">
+                        <textarea name="" placeholder="Enter Your Message" id="message" cols="30" rows="10"
+                            onblur="validatemessage()" autocomplete="off"></textarea>
+                        <br><span class="inputborder" id="messagee"> </span>
+                    </div>
+                </div>
+
+                <center>
+                    <input type="button" value="ORDER" class="btn" onclick="submitData()"><br>
+                    <a href="#" style="text-decoration: none;" onclick="showReceipt()">SHOW</a>
+                </center>
+            </form>
+        </div>
+        <!----------------- ORDER FORM -------------->
+    </section>
+
+    <section class="receipt" id="receipt">
+        <!----------------- RECEIPT -------------->
+        <div id="Receipt1">
+            <form action="" name="receipt2">
+                <header class="receipt-header">
+                    <h2>RECEIPT</h2>
+
+                    <a href="#" class="logo">
+                        <img src="images/logo.png" alt="logo" class="logo">
+                    </a>
+                </header>
+                <div class="content">
+
+                    <div id="demo1" style="margin-left:40px; margin-top: 40px; margin-bottom: 30px;">
+
+                    </div>
+
+                    <div id="demo2" style="margin-left:40px; margin-top: 40px; margin-bottom: 30px;">
+
+                    </div>
+                    <hr>
+                    <h4 id="total_price"></h4>
+                    <center><input type="button" value="CONFIRM" class="btn" onclick="showOrder()"></center>
+                </div>
+            </form>
+        </div>
+        <!----------------- RECEIPT -------------->
+    </section>
+
+</body>
+
+</html>

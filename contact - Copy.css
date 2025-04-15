@@ -1,0 +1,241 @@
+@import url('href="https://fonts.googleapis.com/css2?family=Andika&display=swap');
+
+:root{
+    --black: black;
+    --purple:purple;
+    --light-color: #666;
+    --dark-moderate-violet:#663399;
+    --box-shadow: 2px 2px 12px grey;
+    --border: 2rem solid rgba(0, 0, 0.1);
+}
+
+*{
+    font-family: 'andika';
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    text-decoration: none;
+    text-transform: none;
+    transition: all .2s linear;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 7rem;
+    scroll-behavior: smooth;
+}
+
+body{
+    background: #fff;
+    /* padding-top: 10%;
+    align-items: center;
+    flex-direction: column;
+    margin: -20px 0 50px;
+    justify-content: center;
+    min-height: 100vh;
+    display: flex; */
+}
+
+.header{
+    height: 100px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    /* border: 1px solid; */
+    justify-content: space-between;
+    padding: 2rem 9%;
+    background: #fff;
+    z-index: 1000;
+    box-shadow: var(--box-shadow);
+}
+
+.header .logo img{
+    margin-top: 10px;
+    height: 125%;
+    width: 120%;
+    display: inline-block;
+}
+
+.header .headbar a{
+    font-size: 1.7rem;
+    border-radius: .5rem;
+    padding: .5rem 1.5rem;
+    color: var(--light-color);
+}
+
+.header .headbar a:hover{
+    color: #fff;
+    background: linear-gradient(120deg, #FAB2FF 40%, #663399);
+}
+
+.header .menubtn{
+    margin-right: 60px;
+}
+
+.header .menubtn button{
+    padding: 10px 45px;
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+    border: none;
+    /* background-image: linear-gradient(to right,#649bff,#0070fa,#649bff); */
+    background-image: linear-gradient(90deg, #FAB2FF, #832388);
+    border-radius: 10px;
+}
+
+.top .con .heading{
+    padding-top: 10%;
+    color: #5969c2;
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.top .con hr{
+    display: block;
+    margin-top: 0.5em;
+    margin-left: 30px;
+    margin-right: 30px;
+    border-style: inset;
+    border-width: 3px;
+}
+
+.wrapper{
+    padding-top: 5%;
+    min-height: 100%;
+    display: flex;
+    margin-left:2%;
+    margin-top: -9%;
+    place-items: center;
+    gap: 20px;
+    /* background-color: lavenderblush; */
+}
+
+.container{
+    margin: 25px;
+    height: 333px;
+    width: 250px;
+    padding: 12px;
+    position: relative;
+    background: linear-gradient(120deg, #FAB2FF 40%, #663399)0 100% no-repeat;
+    background-size: 100% 200%;
+    transition: 0.7s;
+    overflow: hidden;
+    box-shadow: var(--box-shadow);
+    border-radius: 5px;
+}
+
+.img .wrapper{
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.container img{
+    width: 100%;
+    height: 90%;
+}
+
+.container:hover {
+    background-position: 0 0;
+}
+
+.details{
+    position: absolute;
+    background-color: #ffffff;
+    color: #000000;
+    width: 80%;
+    text-align: center;
+    padding: 10px 0;
+    bottom: -100px;
+    margin: auto;
+    left: 0;
+    right: 0;
+    transform: 0.7s;
+    opacity: 0.9;
+}
+
+h3,h5{
+    font-family: 'andika';
+    font-weight: 500;
+}
+
+h3{
+    letter-spacing: 1px;
+    font-size: 14px;
+    font-weight: bolder;
+}
+
+h5{
+    font-size: 12px;
+}
+
+.social-icons{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin: 10px 0 5px 0;
+
+}
+
+.container:hover .details{
+    bottom: 30px;
+}
+
+.img-wrapper:after{
+    position: absolute;
+    content: '';
+    height: 100%;
+    width: 100%;
+    background-color: #000000;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: 0.7s;
+}
+
+.container:hover .img-wrapper:after{
+    opacity: 0.3;
+}
+
+i:hover{
+    color: #529fe9;
+    cursor: pointer;
+}
+
+/* @media screen and(min-width:992px){
+    .wrapper {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 5px;
+    }
+} */
+
+.bottom .con .heading{
+    margin-top: -4.9%;
+    color: #5969c2;
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.bottom .con hr{
+    display: block;
+    margin-top: 0.5em;
+    margin-left: 30px;
+    margin-right: 30px;
+    border-style: inset;
+    border-width: 3px;
+}
+
+.bottom .con iframe{
+    padding-top: 3%;
+    padding-left: 3%;
+    padding-right: 3%;
+    width: 100%;
+    height: 600px;
+    padding-bottom: 10%;
+}

@@ -1,0 +1,170 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "poppins", sans-serif;  
+}
+
+body{
+    background: url('images/Login1.jpeg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh;
+    width: 100%;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.back{
+    font-size: 30px;
+}
+
+.form-box{
+    position: relative;
+    width: 400px;
+    height: 550px;
+    border-top: .6px solid rgba(255, 255, 2550.5);
+    border-left: .6px solid rgba(255, 255, 2550.5);
+    box-shadow: 10px 10px 20px rgb(170, 124, 170);
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-box h2{
+    color: #fff;
+    text-align: center;
+    font-size: 32px;
+}
+
+.form-box .input-class{
+    position: relative;
+    margin: 30px 0;
+    width: 310px;
+    border-bottom: 2px solid #fff;
+}
+
+.form-box .input-class input{
+    width: 100%;
+    height: 45px;
+    background: transparent;
+    border: none;
+    outline: none;
+    padding: 0 20px 0 5px;
+    color: #fff;
+    font-size: 16px;
+}
+
+i{
+    position: absolute;
+    color: #fff;
+    top: 13px;
+    right: 0;
+}
+
+input::placeholder{
+    color: #fff;
+}
+
+.btn{
+    color: #fff;
+    background: blue;
+    width: 100%;
+    height: 50px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    font-size: 17px;
+    cursor: pointer;
+    box-shadow: 3px 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.group{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.group p{
+    color: #fff;
+    font-size: small;
+}
+
+.group span a{
+    color: #fff;
+    position: relative;
+    top: 10px;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.group a:focus{
+    text-decoration: underline;
+}
+
+#result{
+    color: red;
+    font-weight: 200;
+    position: relative;
+    top: 25px;
+}
+
+.popup{
+    width: 400px;
+    background-color: #fff;
+    border-radius: 6px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: transform .4s , top .4s ;
+    visibility: hidden;
+    text-align: center;
+    padding: 70px 30px 30px;
+    height: 330px;
+    color: #000;
+}
+
+.popup i{
+    left: 4%;
+    color: #4aa04a;
+    font-size: 50px;
+}
+
+.popup button{
+    width: 100%;
+    background: #4aa04a;
+    padding: 10px 0;
+    margin-top: 50px;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    color: #fff;
+    cursor: pointer;
+    box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.5);
+}
+
+.popup button:hover{
+    background: #2f662f;
+}
+
+.popup a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.open-slide{
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    visibility: visible;
+}

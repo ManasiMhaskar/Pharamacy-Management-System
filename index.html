@@ -1,0 +1,44 @@
+<html>
+<head>
+    <title>Home Page</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Andika&display=swap">
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <script language="javascript" type="text/javascript">
+        function appointment(){
+            MyWindow = window.open('appointment.html','appointment','status=0,scrollbars=1,location=0,height=454,width=1015,top=150,left=100')
+        }
+    </script>
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo">
+            <img src="images/logo.png" alt="logo">
+        </a>
+        <nav class="headbar">
+            <a href="index.html">HOME</a>
+            <!-- <a href="login.html">LOGIN</a> -->
+            <!-- <a href="doctor.html">DOCTORS</a> -->
+            <a href="medicine.html">MEDICINE</a>
+            <a href="service.html">SERVICE</a>
+            <a href="contact.html">CONTACT</a>
+        </nav>
+        <div class="menubtn">
+            <a href="login2.html"><button>REGISTER HERE</button></a>
+        </div>
+    </header>
+    <section class="main">
+        <div class="left">
+            <h2>We Are Here For Your Care</h2>
+            <h1>We Are The Best Pharmacy</h1>
+            <p>We are here for your care 24/7. Any help just call us</p>
+
+            <!-- <button><a href="appointment.html" style="color: white;">Make An Appointment</a></button> -->
+            <button name="b1" onclick="appointment()">Make An Appointment</button>
+        </div>
+
+        <div class="right">
+            <img src="images/w1.png" alt="home-image">
+        </div>
+    </section>
+</body>
+</html>

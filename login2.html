@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Andika&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+   
+    <link rel="stylesheet" href="login2.css">
+    <script src="login2.js"></script>
+
+    <!-- <script type="module" src="https://unpkg.com/iconicons@5.5.2/dist/iconicons/iconicons.esm.js" rel="stylesheet"></script>
+    <script nomodule src="https://unpkg.com/iconicons@5.5.2/dist/iconicons/iconicons.js" rel="stylesheet"></script> -->
+
+    <title>REGISTERATION</title>
+</head>
+<body>
+    <div class="back">
+        <a href="index.html"><i class="fa-solid fa-xmark"></i></a>
+    </div>
+    <!-- Registration Form -->
+
+    <div class="container">
+        <div class="form-box">
+            <form action="" name="Formfill" onsubmit="return validation()">
+                <h2>REGISTER</h2>
+                <p id="result"></p>
+                <div class="input-class">
+                    <i class="fa fa-user"></i>
+                    <input type="text" name="Username" id="Username" placeholder="Username">
+                </div>
+                <div class="input-class">
+                    <i class="fa fa-envelope"></i>
+                    <input type="email" name="Email" id="Email" placeholder="Email">
+                </div>
+                <div class="input-class">
+                    <i class="fa fa-lock"></i>
+                    <input type="password" name="Password" id="Password" placeholder="Password">
+                </div>
+                <div class="input-class">
+                    <i class="fa fa-lock"></i>
+                    <input type="password" name="cPassword" id="cPassword" placeholder="Confirm Password">
+                </div>
+                <div class="button">
+                    <input type="submit" class="btn" value="Register" onclick="validation()">
+                </div>
+                <br>
+                <div class="group">
+                    <p>Already have an account?</p>
+                </div>
+                <div class="group">
+                    <span><a href="login2_2.html">Login</a></span>
+                </div>
+            </form>
+        </div>
+
+        <!-- Pop-up value -->
+        <div id="popup" class="popup">
+            <i class="fa-regular fa-circle-check"></i>
+            <h2>Thank You!</h2>
+            <p>You registered successfully!</p>
+            <a href="#"><button onclick="closeSlide()">OK</button></a>
+        </div>
+        <!-- Pop-up value -->
+
+    </div>
+
+     <!-- Registration Form -->
+</body>
+</html>

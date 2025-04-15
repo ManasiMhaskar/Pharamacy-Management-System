@@ -1,0 +1,187 @@
+
+:root{
+    --purple1:#48254f;
+    --purple2:#832388;
+    --light-color:#666;
+    --red:#ff3838;
+    --box-shadow:0 5px 15px rgba(0, 0, 0, 0.183);
+}
+
+*{
+    font-family: 'Nunito', sans-serif;
+    margin:0; 
+    padding:0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none; border:none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 55px;
+}
+
+body{
+   background: linear-gradient(120deg,#f6cff9,#f5bcf9,#b051b5,#832388);
+   background-attachment: fixed;
+   background-repeat: no-repeat;
+}
+
+.order .back a{
+    font-size: 30px;
+    color:#fffcff;
+    margin-right: 20%;
+}
+
+.sub-heading{
+    text-align: center;
+    color: var(--purple1);
+    font-size: 15px;
+    padding-bottom: 20px;
+
+}
+.heading{
+    margin-left: 43%;
+    margin-top: 15px;
+    text-align: center;
+    color: var(--purple2);
+    font-size: 25px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn{
+    margin-top: 10px;
+    display: inline-block;
+    font-size: 17px;
+    color:#fff;
+    background: var(--purple2);
+    border-radius: 5px;
+    cursor: pointer;
+    padding:8px 30px;
+}
+
+.btn:hover{
+    background: #f5bcf9;
+    letter-spacing: 1px;
+}
+
+.order form{
+    max-width: 750px;
+    border-radius: 2px;
+    box-shadow: var(--box-shadow);
+    border: 2px solid rgba(0, 0, 0, 0.317);
+    background: #fff;
+    padding: 15px;
+    margin:0 auto;
+}
+.order form .inputBox{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
+.order form .inputBox .input{
+    display:block ;
+    padding: 5px 0;
+    font-size: 15px;
+    color: var(--light-color);
+}
+
+.order form .inputBox .input select{
+    background: #eee;
+    border-radius: 5px;
+    color: var(--purple2);
+    padding: 10px;
+    font-size: 16px;
+    max-width: 250px;
+    margin-bottom: 10px;
+}
+
+.order form .inputBox .input input,
+.order form .inputBox .input textarea{
+    background: #eee;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 16px;
+    color: var(--purple2);
+    text-transform: none;
+    margin-bottom: 10px;
+    width: 250px;
+    /* width: 100%; */
+}
+
+.order form .inputBox .input input:focus,
+.order form .inputBox .input textarea:focus{
+    border: solid var(--light-color);
+}
+
+
+.order form .inputBox .input textarea{
+   height: 20rem;
+   resize: none;
+}
+
+.order form .inputBox .input select{
+    height: 4rem;
+    width:30rem ;
+    resize: none;
+ }
+
+.order form .btn{
+    margin-top: 0;
+}
+
+.inputborder 
+{
+    color: red;
+    font-size: 14px;
+}
+
+
+
+/* ------------------------------------RECEIPT------------------------------------ */
+/* #Receipt1{
+    margin-top: -500px;
+} */
+
+.logo img{
+    margin-left: 620px;
+    margin-top: -90px;
+    height: 90px;
+    width: 90px;
+}
+
+.receipt-header h2{
+    margin-top: 15px;
+    letter-spacing: -5px;
+    color: var(--purple2);
+    font-size: 50px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.receipt form{
+    max-width: 750px;
+    border-radius: 2px;
+    box-shadow: var(--box-shadow);
+    border: 2px solid rgba(0, 0, 0, 0.317);
+    background: #fff;
+    padding: 15px;
+    margin:0 auto;
+}
+
+.receipt form .btn{
+    margin-top: 0;
+}
+
+.receipt .content .receipt-btn {
+    background: var(--purple2);
+}
+
+.content{
+    background-color: #fff;
+}
